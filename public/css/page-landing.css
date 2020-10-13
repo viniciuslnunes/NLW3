@@ -27,4 +27,9 @@ h1,
     align-items: center;
     justify-content: center;
     margin: auto;
+    transition: background .200ms;
+}
+
+.visit a:hover {
+    background: #96feff;
 }
