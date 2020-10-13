@@ -1,0 +1,30 @@
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) no-repeat;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    /* align-items: center; Centraliza somente cima e baixo */
+}
+
+#container {
+    margin: auto;
+    /* Centraliza todas as dimensões */
+}
+
+.location,
+h1,
+.visit p {
+    height: 16vh;
+}
+
+.visit a {
+    width: 8rem;
+    height: 8rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    font-size: 1.8em;
+}
+
+:root {
+    font-size: 62.5%;
+    /* Equivalente a 10px dos 18px definidos por propriedade */
+}
+
+body,
+input,
+button,
+textarea {
+    font: 400 1.8rem/1 "Nunito", sans-serif;
+    /* font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif; */
+}
+
+
+/* ANIMATIONS CSS */
+
+#logo {
+    animation-delay: 50ms;
+}
+
+.location {
+    animation-delay: 100ms;
+}
+
+main h1 {
+    animation-delay: 150ms;
+}
+
+.visit p {
+    animation-delay: 200ms;
+}
+
+visit a {
+    animation-delay: 250ms;
+}
