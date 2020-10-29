@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./public/css/sidebar.css" />
     <link rel="stylesheet" href="./public/css/map.css" />
     <link rel="stylesheet" href="./public/css/form.css" />
+    <link rel="stylesheet" href="./public/css/buttons.css" />
+
 
 
 
@@ -47,6 +49,9 @@
 
                     <div class="map-container">
                         <div id="mapid"></div>
+                        <input type="hidden" name="lat">
+                        <input type="hidden" name="lng">
+
                         <footer>
                             <a href="#" id="select-point">
                                     Clique no mapa para adicionar a localização
@@ -55,26 +60,33 @@
                     </div>
                     <div class="input-block">
                         <label for="name">Nome</label>
-                        <input id="name" name="name">
+                        <input id="name" name="name" required>
                     </div>
 
                     <div class="input-block">
                         <label for="about">Sobre <span>Máximo de 300 caracteres</span></label>
-                        <textarea id="about" name="about"></textarea>
+                        <textarea id="about" name="about" required></textarea>
                     </div>
 
                     <div class="input-block">
                         <label for="whatsapp">Número de whatsapp</label>
-                        <input id="whatsapp" name="whatsapp"></input>
+                        <input id="whatsapp" name="whatsapp" required></input>
                     </div>
 
                     <div class="input-block images">
-                        <label for=" images" placeholder="Cole o link da foto aqui">Foto</label>
-                        <div class="images-upload " id="images ">
-                            <input name="images ">
+                        <label for="images">Foto</label>
+
+                        <div class="images-upload " id="images">
+
+                            <div class="new-upload">
+                                <input name="images" placeholder="Cole o link da foto aqui" required/>
+                                <span><img src="./public/images/remove-file.svg" alt="Remover foto">
+                                </span>
+                            </div>
+
                         </div>
                         <button type="button">
-                            <img src="./public/images/add-file.svg " alt="Nova imagem ">
+                            <img src="./public/images/add-file.svg " alt="Nova imagem" />
                         </button>
                     </div>
 
@@ -87,17 +99,23 @@
 
                     <div class="input-block">
                         <label for="instructions">Instruções</label>
-                        <textarea id="instructions" name="instructions"></textarea>
+                        <textarea id="instructions" name="instructions" required></textarea>
                     </div>
 
                     <div class="input-block">
                         <label for="opening_hours">Horário das visitas</label>
-                        <input id="opening_hours" name="opening_hours">
+                        <input id="opening_hours" name="opening_hours" required>
                     </div>
 
                     <div class="input-block">
                         <label for="open_on_weekends">Atende fim de semana?</label>
-                        <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" />
+                        <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required/>
+
+                        <div class="button-select">
+                            <button type="button" class="active">Sim</button>
+                            <button type="button">Não</button>
+                        </div>
+                        <button type="submit" class="primary-button">Confirmar</button>
 
                     </div>
 
@@ -107,7 +125,7 @@
 
         </main>
     </div>
-    <script src="./public/scripts/page-create-orphanage.js "></script>
+    <script src="./public/scripts/page-create-orphanage.js"></script>
 </body>
 
 </html>
